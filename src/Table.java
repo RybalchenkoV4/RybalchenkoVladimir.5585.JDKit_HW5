@@ -38,7 +38,7 @@ public class Table extends Thread {
         }
 
         for (int i = 0; i < PHILOSOPH_COUNT; i++) {
-            philosophs[i] = new Philosoph("Безмолвный философ №" + i, this, i, (i+1) % PHILOSOPH_COUNT, cdl);
+            philosophs[i] = new Philosoph("Безмолвный философ №" + (i + 1), this, i, (i + 1) % PHILOSOPH_COUNT, cdl);
         }
     }
 

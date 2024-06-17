@@ -43,10 +43,10 @@ public class Philosoph extends Thread{
 
     private void eating() throws InterruptedException {
         if (table.getForks(leftFork, rightFork)) {
-            System.out.println(name + " взял 2 вилки и ест.");
+            System.out.println(name + " взял 2 вилки " + (leftFork + 1) + " & " + (rightFork + 1) + " и ест.");
             sleep(random.nextLong(2000, 5000));
             table.putFork(leftFork, rightFork);
-            System.out.println(name + " поел. Размышляет.");
+            System.out.println(name + " поел и положил вилки " + (leftFork + 1) + " & " + (rightFork + 1) + ". Размышляет.");
             count++;
         }
     }
